@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Why-oh-Wine – The best drinks in the town – Red Reserve</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+      rel="stylesheet"
+    >
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-submenu">
+                    <a href="#">Wines</a>
+                    <ul class="submenu">
+                        <li><a href="#">Red</a></li>
+                        <li><a href="#">White</a></li>
+                        <li><a href="#">Rosé</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">Beers</a>
+                    <ul class="submenu">
+                        <li><a href="#">Lager</a></li>
+                        <li><a href="#">IPA</a></li>
+                        <li><a href="#">Stout</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="logo-section">
+                <img src="logo.png" alt="Why-oh-Wine Logo" class="logo">
+                <div class="tagline">The best drinks in the town</div>
+            </div>
+
+            <ul class="nav-right">
+                <li><a href="#" class="btn">Sign In</a></li>
+                <li><a href="#" class="btn">Sign Up</a></li>
+                <li><a href="#"><img src="cart.png" alt="Cart" class="cart-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper product-page">
+        <!-- Main Section (80%) -->
+        <main>
+            <div class="product-detail">
+                <div class="product-image">
+                    <!-- Re-using product1.jpg as "Red Reserve" image -->
+                    <img src="product1.webp" alt="Red Reserve Wine Bottle">
+                </div>
+                <div class="product-info">
+                    <h1>Red Reserve</h1>
+                    <p class="product-price">$25.00</p>
+                    <p class="product-description">
+                        Our Red Reserve is crafted from carefully selected grapes, delivering a well-rounded and 
+                        velvety flavor profile. This full-bodied red wine showcases a bouquet of dark cherries, 
+                        blackcurrants, and subtle notes of oak. Perfectly aged, it offers a smooth, lingering finish 
+                        that pairs beautifully with rich meat dishes, hearty pastas, or a flavorful cheese board.
+                    </p>
+                    <p class="product-description">
+                        Handpicked from sustainable vineyards, the Red Reserve is produced by our experienced 
+                        winemakers who bring together traditional methods and modern techniques. The result is a 
+                        premium wine that truly reflects the terroir and dedication behind each bottle.
+                    </p>
+                    <div class="product-actions">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="99">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="additional-details">
+                        <h3>Product Details</h3>
+                        <ul>
+                            <li>Variety: Cabernet Sauvignon & Merlot blend</li>
+                            <li>Region: Napa Valley, USA</li>
+                            <li>Vintage: 2018</li>
+                            <li>ABV: 13.5%</li>
+                        </ul>
+
+                        <h3>Shipping & Returns</h3>
+                        <p>
+                            We ship your orders within 2-3 business days. Standard shipping times apply and 
+                            vary by region. Orders over $50 qualify for free shipping. If you’re not fully satisfied, 
+                            returns are accepted within 14 days of delivery—just contact our support team for assistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Aside Section (20%) -->
+        <aside>
+            <h3>Recommended Products</h3>
+            <p>Interested in exploring other flavors? Check out our “White Delight” or “Rosé Special” for a lighter, 
+               fruitier experience.</p>
+            <p>Explore our Accessories section for premium openers, chillers, and glassware.</p>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    padding-top: 100px; /* Adjust this value based on the height of your header */
+}
+
+header {
+    background: #003366; /* Dark Blue */
+    color: #FFD700;      /* Golden Yellow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999; /* Ensures the header stays on top */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-left, .nav-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left li, .nav-right li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Submenu Styles */
+.has-submenu .submenu {
+    display: none;
+    position: absolute;
+    background: #003366;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 8px 10px;
+    color: #FFD700;
+}
+
+.submenu a:hover {
+    background: #002244;
+    color: #fff;
+}
+
+/* Logo and Tagline */
+.logo-section {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.logo {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-size: 0.9em;
+    color: #FFD700;
+    margin-top: 5px;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    width: 80%;
+    padding: 0 20px 0 0;
+}
+
+aside {
+    width: 20%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Products */
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 18%;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.product-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Buttons (Sign In / Sign Up) */
+.btn {
+    border: 1px solid #FFD700;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #FFD700;
+    color: #003366;
+}
+
+/* Cart Icon */
+.cart-icon {
+    max-width: 24px;
+    vertical-align: middle;
+}
+
+.product-page main {
+    padding-right: 20px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #003366;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-actions label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.product-actions input[type="number"] {
+    width: 60px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.add-to-cart-btn {
+    background: #FFD700;
+    color: #003366;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background: #ffc700;
+    transition: background-color 0.3s ease;
+}
+
+.additional-details h3 {
+    margin-top: 30px;
+    color: #003366;
+}
+
+.additional-details ul {
+    list-style: disc;
+    margin: 10px 0 20px 20px;
+    padding: 0;
+}
+
+aside h3 {
+    margin-top: 0;
+}

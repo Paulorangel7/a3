@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Page Title with Slogan -->
+    <title>Why-oh-Wine – The best drinks in the town</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Sample Font (Classy, modern sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+      rel="stylesheet"
+    >
+
+    <!-- Favicon (provided as .png) -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-left">
+                <li><a href="#">Home</a></li>
+                <li class="has-submenu">
+                    <a href="#">Wines</a>
+                    <ul class="submenu">
+                        <li><a href="#">Red</a></li>
+                        <li><a href="#">White</a></li>
+                        <li><a href="#">Rosé</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">Beers</a>
+                    <ul class="submenu">
+                        <li><a href="#">Lager</a></li>
+                        <li><a href="#">IPA</a></li>
+                        <li><a href="#">Stout</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="logo-section">
+                <img src="logo.png" alt="Why-oh-Wine Logo" class="logo">
+                <div class="tagline">The best drinks in the town</div>
+            </div>
+
+            <ul class="nav-right">
+                <li><a href="#" class="btn">Sign In</a></li>
+                <li><a href="#" class="btn">Sign Up</a></li>
+                <li><a href="#"><img src="cart.png" alt="Cart" class="cart-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="banner.png" alt="Banner Image">
+    </section>
+
+    <div class="content-wrapper">
+        <!-- Main Section (80%) -->
+        <main>
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <a href="product-redreserve.html">
+                    <img src="product1.webp" alt="Product 1">
+                    <h3>Red Reserve</h3>
+                    <p>$25.00</p>
+                </a>
+                </div>
+                <div class="product-item">
+                    <img src="product2.webp" alt="Product 2">
+                    <h3>White Delight</h3>
+                    <p>$20.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Rosé Special</h3>
+                    <p>$22.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="product4.webp" alt="Product 4">
+                    <h3>Craft Lager</h3>
+                    <p>$18.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="product5.webp" alt="Product 5">
+                    <h3>Signature Stout</h3>
+                    <p>$30.00</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Aside Section (20%) -->
+        <aside>
+            <h3>Promotions</h3>
+            <p>Check out our latest discounts on selected wines and beers. Stay tuned for upcoming seasonal offers and enjoy free shipping on orders over $50.</p>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
